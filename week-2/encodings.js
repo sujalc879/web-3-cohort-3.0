@@ -1,6 +1,7 @@
 // slide link : https://projects.100xdevs.com/tracks/public-private-keys/Public-Key-Cryptography-3
 
 const bs58 = require('bs58');;
+const fs = require('fs');
 
 // Bytes to Ascii
 
@@ -102,11 +103,27 @@ const bs58 = require('bs58');;
 
 // Base58
 
-function decodeBase58(arr) {
-    return bs58.default.decode(arr.toString());
-}
-console.log(bs58);
+// Encode
 
-const uint8Array = new Uint8Array([1123]);
-const result = decodeBase58(uint8Array);
-console.log(result);
+// function encodeBase58(arr) {
+//     return bs58.default.encode(arr);
+// }
+
+// Corresponds to Sujal
+// const bytes = new Uint8Array([83, 117, 106, 97, 108]);
+// const result = encodeBase58(bytes);
+// console.log(result);
+
+
+
+// Decode 
+
+// function decodeBase58(str) {
+//     return bs58.default.decode(str);
+// }
+
+// It is decoded value of "Sujal"
+// const str = "AR8CBGw";
+// const result = decodeBase58(str);
+// console.log(result);
+
